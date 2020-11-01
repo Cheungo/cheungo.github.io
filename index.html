@@ -1,8 +1,68 @@
 <!DOCTYPE html>
 
 <html>
-  <!-- git reset --hard [hash code of last commit] -->
-  <!-- Brackets text editor -->
-  Hello World!
+<head>
+  <title>Josh Cheung</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <h1>Josh Cheung</h1>
+    <p>Welcome to my Website!</p>
+  </div>
+
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="aboutme.html">About Me</a>
+  </div>
+
+  <div class="slides">
+    <img class="mySlides" src="Gungnir.png" style="width:100%">
+    <img class="mySlides" src="Khajiit.png" style="width:100%">
+    <img class="mySlides" src="Sneak.jpg" style="width:100%">
+  </div>
+
+  <div class="row">
+    <div class="side">
+      <h2>Josh Cheung</h2>
+    </div>
+    <div class="main">
+      <h2>Blog</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque imperdiet ullamcorper nisl, eget gravida nibh convallis et. Cras non dictum dolor. Cras nec massa eu diam ullamcorper aliquet. Vestibulum eget auctor urna, dignissim tincidunt magna. Aliquam molestie ipsum nec euismod ultricies. Praesent in placerat dolor. Morbi at lectus mi. Sed ac lobortis dolor. Donec nec sem arcu. Nulla condimentum efficitur vestibulum. Etiam eu dignissim turpis. Aenean accumsan congue eros sit amet imperdiet. Maecenas viverra dui ac ligula elementum, et elementum diam molestie. In hac habitasse platea dictumst. Vivamus commodo elit sit amet ornare interdum. Nulla non aliquet massa, sed auctor orci. Donec quis eleifend risus. Ut sit amet sollicitudin diam. Donec leo sapien, posuere sed convallis ut, tempus nec enim. Nullam eu fermentum dui. Nulla ultricies lorem sem, in consectetur massa volutpat quis. Aliquam mollis nisi vitae mauris euismod molestie. Proin sit amet nulla vel orci rutrum blandit ut at nisl. Vestibulum et nulla quam. Donec libero lacus, aliquet vitae porta at, volutpat eu neque. Nulla vestibulum arcu nec risus tempus malesuada. Curabitur felis dui, suscipit sed lorem a, lacinia gravida sapien. Suspendisse mollis nulla nunc, quis auctor ipsum lacinia id. </p>
+    </div>
+  </div>
+
+  <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {
+        myIndex = 1;
+      }
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 3000);
+    }
+  </script>
+
+  <div class="footer">
+    <h2>Contact Me</h2>
+  </div>
+</body>
 
 </html>
